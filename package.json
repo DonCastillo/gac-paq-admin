@@ -1,0 +1,20 @@
+{
+  "name": "gac-paq-admin",
+  "version": "1.0.0",
+  "description": "Admin dashboard for the GAC PAQ mobile app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-snapshot": "docker exec -it gacpaq_directus npx directus schema snapshot ./schema/\"$(date \"+%F\")\"-snapshot-\"$(date \"+%s\")\".yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DonCastillo/gac-paq-admin.git"
+  },
+  "author": "Don Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonCastillo/gac-paq-admin/issues"
+  },
+  "homepage": "https://github.com/DonCastillo/gac-paq-admin#readme"
+}
