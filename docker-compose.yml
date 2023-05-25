@@ -23,11 +23,11 @@ services:
 
   directus:
     container_name: ${DIRECTUS_CONTAINER_NAME}
-    command: >
-      sh -c "
-        mkdir ./schema
-        npx directus bootstrap && npx directus start
-      "
+    # command: >
+    #   sh -c "
+    #     mkdir ./schema
+    #     npx directus bootstrap && npx directus start
+    #   "
     image: directus/directus:${DIRECTUS_VERSION}
     volumes:
       # By default, uploads are stored in /directus/uploads
